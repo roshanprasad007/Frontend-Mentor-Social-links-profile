@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  color: white;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  max-width: 500px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 5rem 4rem 3rem 4rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.imgbox {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.img {
+  width: 25%;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.location {
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.prof {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.btn {
+  display: inline-block;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  color: white;
+  padding: 1.2rem 10rem;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2ms;
+}
+.btn:hover,
+.btn:visited {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(75, 94%, 57%);
+}
+@media (max-width: 431px) {
+  .container {
+    max-width: 400px;
+    padding: 3rem 4rem 4rem 3rem;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    max-width: 300px;
+  }
+  html {
+    font-size: 45%;
+  }
+}
